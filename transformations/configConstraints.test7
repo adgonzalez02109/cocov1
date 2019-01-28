@@ -1,0 +1,14 @@
+Attribute_Types {
+	COSTO{
+		int minValue;
+		int maxValue;
+		int defaultValue;
+	}
+	
+}
+
+Solution_Constraints {
+	
+	optimization COSTOSSS: minimize COSTO;
+	
+}
