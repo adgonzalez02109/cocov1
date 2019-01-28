@@ -1,0 +1,17 @@
+%Relationships
+CASINO: [MAQUINAS]  [MESAS]  PERSONAL;
+PERSONAL: PROF EMPIRICO
+
+
+%Attributes
+MAQUINAS.COSTO:  Integer[10 to 100], 50, 0;
+MESAS.COSTO:  Integer[10 to 100], 50, 0;
+PROF.COSTO:  Integer[10 to 100], 10, 0;
+EMPIRICO.TIEMPO: Integer[90 to 100], 20, 0;
+
+
+%Constraints
+MAQUINAS EXCLUDES MESAS
+MESAS REQUIRES EMPIRICO
+
+
